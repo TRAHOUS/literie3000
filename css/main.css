@@ -8,7 +8,7 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  background-color: #070707;
+  background-color: #04051B;
   padding: 20px;
 }
 
@@ -184,8 +184,10 @@ select {
 /* CSS pour la page d'affichage d'un matelas */
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  
 }
 
 p{

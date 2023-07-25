@@ -72,7 +72,7 @@ if (!empty($_POST)) {
 
 include("templates/header.php");
 ?>
-<h1>Ajouter une matelas</h1>
+<h1>Ajouter un matelas</h1>
 <!-- Lorsque l'attribut action est vide, les données du formulaire sont envoyées à la même page -->
 <form action="" method="post" enctype="multipart/form-data">
     <div class="form-group">

@@ -42,7 +42,7 @@ include("templates/header.php");
 </div>
 <!-- Bouton pour rediriger vers add.php -->
 <div style="text-align: center;">
-    <a href="add.php"><button>Ajouter une nouvelle matelas</button></a>
+    <a href="add.php"><button>Ajouter un nouveau matelas</button></a>
 </div>
 
 <?php
