@@ -31,7 +31,7 @@ include("templates/header.php");
 if ($find) {
 ?>
 <div class="flex">
-  <div class="right">  <img src="img/matelas/<?= $data["picture"] ?>" alt="" class="matela-picture"></div>
+  <div class="right1">  <img src="img/matelas/<?= $data["picture"] ?>" alt="" class="matela-picture"></div>
   <div class="left">
     <p> <?= $data["description"] ?></p>
     <p>Prix : <?= $data["price"] ?>$</p>
