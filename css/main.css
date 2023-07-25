@@ -1,4 +1,4 @@
-/* Réinitialisation des styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20VH;
+  height: 25VH;
 }
 
 
@@ -37,11 +37,11 @@ body {
 }
 
 h1 {
-  text-align: center;
+
   font-size: 32px;
   margin-bottom: 20px;
   text-decoration: underline;
-  color: #cddbe9;
+  color: #cfcd3d;
   overflow: hidden; /* To hide the text that exceeds the width */
   white-space: nowrap; /* To keep the text in one line */
   animation: typewriter 5s steps(60) forwards;
@@ -50,18 +50,25 @@ h1 {
 }
 
 .matelas {
-  display: flex;
-  flex-wrap: wrap;
+
+
+  flex-direction: column;
 }
 
 .flex {
   flex: 1;
   margin: 10px;
-  background-color: #f7f3f3;
-  border: 1px solid #2956e9;
+  background-color: #7f8f44;
+  border: 1px solid #051549;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+
+    display: flex;
+    background-color: #e4e7eb;
+  
+
+
 }
 
 .matela img {
@@ -90,7 +97,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #280ad3;
+  color: #07489c;
 }
 
 a:hover {
@@ -123,7 +130,7 @@ form {
   max-width: 400px;
   margin: 0 auto;
   padding: 10px;
-  background-color: #7c2121;
+  background-color: #e6dddd;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -146,7 +153,7 @@ select,
 input[type="number"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #722222;
+  border: 1px solid #0f0f0f;
   border-radius: 5px;
 }
 
@@ -191,11 +198,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 20px;
 }
 
-.flex{
-  display: flex;
-  background-color: #95989c;
 
-}
 
 p {
   font-size: 25px;
@@ -261,7 +264,7 @@ input[type="submit"] {
   font-size: 1.6rem;
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 230px;
   border: none;
   border-radius: 5px;
   cursor: pointer;

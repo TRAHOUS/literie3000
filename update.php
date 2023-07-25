@@ -1,18 +1,22 @@
+<!-- matelas.php -->
 <?php
+// ... (Existing code above)
+
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["id"])) {
     // Assurez-vous que les champs nécessaires sont présents dans le formulaire
-    if (isset($_POST["name"]) && isset($_POST["description"]) && isset($_POST["price"])) {
+    if (isset($_POST["name"]) && isset($_POST["description"]) && isset($_POST["price"]) && isset($_POST["dimension"])) {
         // Connexion à la base de données Marmiton
         $dsn = "mysql:host=localhost;dbname=literie";
         $db = new PDO($dsn, "root", "");
 
         // Préparer la requête SQL pour mettre à jour la recette
-        $query = $db->prepare("UPDATE matelas SET name = :name, description = :description, price = :price WHERE id = :id");
+        $query = $db->prepare("UPDATE matelas SET name = :name, description = :description, dimension = :dimension, price = :price WHERE id = :id");
 
         // Lier les valeurs aux paramètres
         $query->bindParam(":id", $_POST["id"], PDO::PARAM_INT);
         $query->bindParam(":name", $_POST["name"], PDO::PARAM_STR);
         $query->bindParam(":description", $_POST["description"], PDO::PARAM_STR);
+        $query->bindParam(":dimension", $_POST["dimension"], PDO::PARAM_STR);
         $query->bindParam(":price", $_POST["price"], PDO::PARAM_INT);
 
         // Exécuter la requête préparée

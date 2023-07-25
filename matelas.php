@@ -55,6 +55,9 @@ if ($find) {
                 <label for="price">Prix:</label>
                 <input type="number" name="price" value="<?php echo htmlspecialchars($matela["price"]); ?>"><br>
                 
+                <label for="dimension">Dimension:</label>
+    <input type="text" name="dimension" value="<?= $matela["dimension"] ?>" required>
+
                 <input type="submit" value="Modifier">
             </form>
 
