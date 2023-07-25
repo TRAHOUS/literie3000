@@ -48,7 +48,7 @@ if ($find) {
    <!-- Formulaire de modification -->
    <form method="post" action="update.php">
                 <input type="hidden" name="id" value="<?php echo $matela["id"]; ?>">
-                <label for="name">Nom de la recette:</label>
+                <label for="name">Marque de matelas : </label>
                 <input type="text" name="name" value="<?php echo htmlspecialchars($matela["name"]); ?>"><br>
                 <label for="description">Description:</label>
                 <textarea name="description"><?php echo htmlspecialchars($matela["description"]); ?></textarea><br>
