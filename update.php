@@ -18,8 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["id"])) {
         // Exécuter la requête préparée
         if ($query->execute()) {
             // Rediriger vers la page de la recette mise à jour ou toute autre page de votre choix
-            header("Location: matelas.php
-            ?id=" . $_POST["id"]);
+            header("Location: matelas.php?id=" . $_POST["id"]);
             exit; // Assurez-vous de terminer le script ici pour éviter toute exécution supplémentaire
         } else {
             // En cas d'erreur lors de l'exécution de la requête

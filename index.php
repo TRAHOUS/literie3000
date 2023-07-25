@@ -26,10 +26,10 @@ include("templates/header.php");
             <h2>
                 <a href="matelas.php?id=<?= $matela["id"] ?>"><?= $matela["name"] ?></a>
             </h2>
-            <p>Dimension: <?= $matela["dimension"] ?></p>
-            
+                      
             <p>Description: <?= $matela["description"] ?></p>
-            <p>Price: <?= $matela["price"] ?></p>
+            <p>Dimension: <?= $matela["dimension"] ?></p>
+              <p>Price: <?= $matela["price"] ?>$</p>
       
 
 

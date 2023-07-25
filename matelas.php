@@ -30,12 +30,14 @@ include("templates/header.php");
 <?php
 if ($find) {
 ?>
-    <img src="img/matelas/<?= $data["picture"] ?>" alt="" class="matela-picture">
+<div class="flex">
+  <div class="right">  <img src="img/matelas/<?= $data["picture"] ?>" alt="" class="matela-picture"></div>
+  <div class="left">
     <p> <?= $data["description"] ?></p>
     <p>Prix : <?= $data["price"] ?>$</p>
     <p>Dimension : <?= $data["dimension"] ?></p>
 
-
+  </div>
    <!-- Bouton de suppression -->
    <form action="delete.php" method="get">
         <input type="hidden" name="id" value="<?= $_GET["id"] ?>">
@@ -56,6 +58,7 @@ if ($find) {
                 <input type="submit" value="Modifier">
             </form>
 
+  </div>
 
 <?php
 }

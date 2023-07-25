@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo-wrapper">
+        <div class="logo-container">
             <a href="index.php">
-                <img src="img/logo12.png" alt="literie" class="logo">
+                <img src="img/logo12.png" alt="literie">
             </a>
         </div>

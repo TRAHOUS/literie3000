@@ -1,123 +1,286 @@
+/* Réinitialisation des styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-size: 1.6rem;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #070707;
+  padding: 20px;
 }
 
-img {
-  width: 30%;
-}
 
-@font-face {
-  font-family: "Filson Soft";
-  src: url("../fonts/filson-soft.eot"); /* IE9*/
-  src: url("../fonts/filson-soft.eot?#iefix") format("embedded-opentype"), url("../fonts/filson-soft.woff2") format("woff2"), url("../fonts/filson-soft.woff") format("woff"), url("../fonts/filson-soft.ttf") format("truetype"), url("../fonts/filson-soft.svg#Filson Soft W03 Regular") format("svg"); /* iOS 4.1- */
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #fffefe;
-  padding: 2rem;
-}
-
-.logo-wrapper {
-  padding: 2rem 0;
-  text-align: center;
-}
-.logo-wrapper .logo {
-  width: 35rem;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 4rem 4rem;
-  background-color: rgb(216, 207, 207);
-  border-radius: 1rem;
-}
-.container form {
-  margin-top: 1rem;
+.logo-container {
   display: flex;
-  flex-wrap: wrap;
-}
-.container form .form-group {
-  flex-basis: 100%;
-  padding: 0 3rem;
-  margin-bottom: 2rem;
-
+  justify-content: center;
+  align-items: center;
+  height: 20VH;
 }
 
 
-@media screen and (min-width: 768px) {
-  .container form .form-group {
-    flex-basis: 50%;
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Keyframes for the animation */
+@keyframes typewriter {
+  from {
+    width: 0;
   }
-}
-.container form .form-group label {
-  display: block;
-  margin-bottom: 1rem;
-}
-.container form .form-group input,
-.container form .form-group textarea,
-.container form .form-group select {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 2rem;
-  border: 0;
-  box-shadow: 0 0 1rem #ddd;
-}
-.container form .form-group select {
-  background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat;
-  background-position: right 1rem top;
-  appearance: none;
+  to {
+    width: 100%;
+  }
 }
 
 h1 {
-  color: #2c2a2a;
-  font-family: "Filson Soft";
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  color: #cddbe9;
+  overflow: hidden; /* To hide the text that exceeds the width */
+  white-space: nowrap; /* To keep the text in one line */
+  animation: typewriter 5s steps(60) forwards;
+
+
+}
+
+.matelas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex {
+  flex: 1;
+  margin: 10px;
+  background-color: #f7f3f3;
+  border: 1px solid #2956e9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.matela img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.right {
+  padding: 10px;
+}
+
+.right h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.right p.description {
+  min-height: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #280ad3;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
-.btn-matelas{
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+button:hover {
+  background-color: #0056b3;
+}
 
-  font-family: "Filson Soft";
-  font-size: 1.8rem;
-  background-color: #0f0b0a;
-  color: white;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 2rem;
+/* Media query pour une meilleure mise en page sur les petits écrans */
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-basis: 100%;
+  }
+}
+
+/* CSS pour la page d'ajout de matelas */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #7c2121;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #0e4d91;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #722222;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  appearance: none;
+  padding-right: 30px;
+  background: url("arrow-down.png") no-repeat right center / 20px;
 }
 
 
 
 
-.info-success {
-  color: #4f964f;
+
+.btn-matelas:hover {
+  background-color: #7b7f85;
 }
 
 .info-error {
   color: #ba3535;
+  font-size: 14px;
 }
 
-.text-center {
+/* CSS pour la page d'affichage d'un matelas */
+h1 {
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
+p{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.matela-picture {
+  display: block;
+  width: 80%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
 
-
-.flex{ 
+.flex{
   display: flex;
-  align-items: center;
+  background-color: #95989c;
 
 }
+
+p {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.delete-btn,
+.update-btn {
+  font-family: "Filson Soft";
+  font-size: 1.6rem;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 110px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-btn {
+  background-color: #007bff;
+  margin-left: 10px;
+}
+
+.delete-btn:hover,
+.update-btn:hover {
+  background-color: #b02a37;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dbd6d6;
+  border: 1px solid #776868;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  font-family: "Filson Soft";
+  font-size: 1.6rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.info-error {
+  color: #ba3535;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+}
+
+
+
