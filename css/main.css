@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 30%;
+}
+
+@font-face {
+  font-family: "Filson Soft";
+  src: url("../fonts/filson-soft.eot"); /* IE9*/
+  src: url("../fonts/filson-soft.eot?#iefix") format("embedded-opentype"), url("../fonts/filson-soft.woff2") format("woff2"), url("../fonts/filson-soft.woff") format("woff"), url("../fonts/filson-soft.ttf") format("truetype"), url("../fonts/filson-soft.svg#Filson Soft W03 Regular") format("svg"); /* iOS 4.1- */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fffefe;
+  padding: 2rem;
+}
+
+.logo-wrapper {
+  padding: 2rem 0;
+  text-align: center;
+}
+.logo-wrapper .logo {
+  width: 35rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 4rem 4rem;
+  background-color: rgb(216, 207, 207);
+  border-radius: 1rem;
+}
+.container form {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container form .form-group {
+  flex-basis: 100%;
+  padding: 0 3rem;
+  margin-bottom: 2rem;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .container form .form-group {
+    flex-basis: 50%;
+  }
+}
+.container form .form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.container form .form-group input,
+.container form .form-group textarea,
+.container form .form-group select {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 0;
+  box-shadow: 0 0 1rem #ddd;
+}
+.container form .form-group select {
+  background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat;
+  background-position: right 1rem top;
+  appearance: none;
+}
+
+h1 {
+  color: #2c2a2a;
+  font-family: "Filson Soft";
+  text-align: center;
+  text-decoration: underline;
+}
+
+.btn-matelas{
+
+
+  font-family: "Filson Soft";
+  font-size: 1.8rem;
+  background-color: #0f0b0a;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2rem;
+}
+
+
+
+
+.info-success {
+  color: #4f964f;
+}
+
+.info-error {
+  color: #ba3535;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+.flex{ 
+  display: flex;
+  align-items: center;
+
+}
